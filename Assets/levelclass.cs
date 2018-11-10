@@ -24,11 +24,10 @@ public class levelclass : MonoBehaviour {
 	public void prefsset1()
 	{
 		if (PlayerPrefs.HasKey (level1.ToString ())) {
-			print ("already");
+
 			levelres = PlayerPrefs.GetFloat (level1.ToString ());
 			currentactivestring = level1.ToString ();
 		} else {
-			print ("alreadyno");
 
 			PlayerPrefs.SetInt (level1.ToString(),0);
 			levelres = PlayerPrefs.GetFloat (level1.ToString());
